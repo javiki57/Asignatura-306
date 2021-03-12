@@ -1,0 +1,44 @@
+body {
+	background-color: #F6F4F0;
+	font-family: sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid #000;
+}
+
+h2{
+	text-align: center;
+	color: green;
+}
+
+td{
+	padding: 0.3em;
+	text-align: left;
+	vertical-align: middle;
+	border: 1px solid green;
+}
+
+.row1 td{
+	color:white;
+	background: green;
+	padding-right: 0.8em;
+}
+
+.color2 td {
+	background: #dfd;
+}
+
+.color1 td {
+	background: white;
+}
+
+.link {
+	text-align:center;
+}
+
+a:link{
+	color:green;
+	text-decoration: none;
+}
