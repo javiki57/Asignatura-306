@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" time="1.559" errors="8" skipped="0">
+<testsuite tests="8" failures="0" name="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" time="1.088" errors="8" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.282-b08"/>
     <property name="java.vm.vendor" value="Private Build"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/alumno/Escritorio/Practica 2/trazabilidad"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/alumno/Escritorio/Practica 2/trazabilidad"/>
+    <property name="user.dir" value="/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad"/>
     <property name="java.runtime.version" value="1.8.0_282-8u282-b08-0ubuntu1~18.04-b08"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
@@ -25,24 +25,26 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/alumno/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4090840573102701828.tmp"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.4.0-67-generic"/>
+    <property name="os.version" value="5.4.0-70-generic"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="user.home" value="/home/alumno"/>
-    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="user.timezone" value="Europe/Andorra"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="alumno"/>
-    <property name="java.class.path" value="/home/alumno/Documentos/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.15.0.20200310-1832/jars/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="es"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -52,7 +54,7 @@
     <property name="securerandom.source" value="file:/dev/./urandom"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
     <property name="java.vendor" value="Private Build"/>
-    <property name="maven.home" value="/home/alumno/Escritorio/Practica 2/trazabilidad/EMBEDDED"/>
+    <property name="maven.home" value="/usr/share/maven"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -60,9 +62,20 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testListaProductos" time="1.069">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testListaProductos(TrazabilidadTest.java:54)
+  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testListaProductos" time="0.926">
+    <error message="An exception occurred while creating a query in EntityManager: 
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression.
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1751)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1772)
+	at es.uma.informatica.sii.jpa.trazabilidad.AccesoDatos.getListaProductos(AccesoDatos.java:53)
+	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testListaProductos(TrazabilidadTest.java:53)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,15 +107,32 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression.
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:157)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:336)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:280)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:165)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:118)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.&lt;init&gt;(EJBQueryImpl.java:104)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.&lt;init&gt;(EJBQueryImpl.java:88)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1749)
+	... 34 more
 </error>
-    <system-out>[EL Info]: 2021-03-25 05:54:03.184--ServerSession(433287555)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
-[EL Info]: connection: 2021-03-25 05:54:03.449--ServerSession(433287555)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
-[EL Info]: connection: 2021-03-25 05:54:03.568--ServerSession(433287555)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
+    <system-out>[EL Info]: 2021-04-08 13:37:00.652--ServerSession(433287555)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
+[EL Info]: connection: 2021-04-08 13:37:00.853--ServerSession(433287555)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
+[EL Info]: connection: 2021-04-08 13:37:01.093--ServerSession(433287555)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
 </system-out>
   </testcase>
-  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testEliminarProductoConLotes" time="0.088">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testEliminarProductoConLotes(TrazabilidadTest.java:217)
+  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testEliminarProductoConLotes" time="0.049">
+    <error message="java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0]." type="javax.persistence.RollbackException">javax.persistence.RollbackException: java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0].
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:161)
+	at es.uma.informatica.sii.jpa.trazabilidad.AccesoDatos.aniadirLoteAProducto(AccesoDatos.java:111)
+	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testEliminarProductoConLotes(TrazabilidadTest.java:210)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -134,15 +164,26 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0].
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.discoverUnregisteredNewObjects(RepeatableWriteUnitOfWork.java:315)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.calculateChanges(UnitOfWorkImpl.java:774)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1570)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:280)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1222)
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:136)
+	... 33 more
 </error>
-    <system-out>[EL Info]: 2021-03-25 05:54:03.618--ServerSession(1744189907)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
-[EL Info]: connection: 2021-03-25 05:54:03.636--ServerSession(1744189907)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
-[EL Info]: connection: 2021-03-25 05:54:03.671--ServerSession(1744189907)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
+    <system-out>[EL Info]: 2021-04-08 13:37:01.114--ServerSession(1940445711)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
+[EL Info]: connection: 2021-04-08 13:37:01.118--ServerSession(1940445711)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
+[EL Warning]: 2021-04-08 13:37:01.149--UnitOfWork(1131184547)--java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0].
+[EL Info]: connection: 2021-04-08 13:37:01.15--ServerSession(1940445711)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
 </system-out>
   </testcase>
-  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testEliminarLoteDeProducto" time="0.073">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testEliminarLoteDeProducto(TrazabilidadTest.java:180)
+  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testEliminarLoteDeProducto" time="0.024">
+    <error message="java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0]." type="javax.persistence.RollbackException">javax.persistence.RollbackException: java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0].
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:161)
+	at es.uma.informatica.sii.jpa.trazabilidad.AccesoDatos.aniadirLoteAProducto(AccesoDatos.java:111)
+	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testEliminarLoteDeProducto(TrazabilidadTest.java:177)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,15 +215,26 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0].
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.discoverUnregisteredNewObjects(RepeatableWriteUnitOfWork.java:315)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.calculateChanges(UnitOfWorkImpl.java:774)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1570)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:280)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1222)
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:136)
+	... 33 more
 </error>
-    <system-out>[EL Info]: 2021-03-25 05:54:03.693--ServerSession(2017085051)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
-[EL Info]: connection: 2021-03-25 05:54:03.714--ServerSession(2017085051)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
-[EL Info]: connection: 2021-03-25 05:54:03.744--ServerSession(2017085051)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
+    <system-out>[EL Info]: 2021-04-08 13:37:01.165--ServerSession(1989132530)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
+[EL Info]: connection: 2021-04-08 13:37:01.169--ServerSession(1989132530)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
+[EL Warning]: 2021-04-08 13:37:01.179--UnitOfWork(100929741)--java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0].
+[EL Info]: connection: 2021-04-08 13:37:01.179--ServerSession(1989132530)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
 </system-out>
   </testcase>
-  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testAniadirVariosLotesAProducto" time="0.056">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testAniadirVariosLotesAProducto(TrazabilidadTest.java:157)
+  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testAniadirVariosLotesAProducto" time="0.016">
+    <error message="java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0]." type="javax.persistence.RollbackException">javax.persistence.RollbackException: java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0].
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:161)
+	at es.uma.informatica.sii.jpa.trazabilidad.AccesoDatos.aniadirLoteAProducto(AccesoDatos.java:111)
+	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testAniadirVariosLotesAProducto(TrazabilidadTest.java:154)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -214,15 +266,35 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0].
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.discoverUnregisteredNewObjects(RepeatableWriteUnitOfWork.java:315)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.calculateChanges(UnitOfWorkImpl.java:774)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1570)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:280)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1222)
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:136)
+	... 33 more
 </error>
-    <system-out>[EL Info]: 2021-03-25 05:54:03.764--ServerSession(953082513)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
-[EL Info]: connection: 2021-03-25 05:54:03.775--ServerSession(953082513)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
-[EL Info]: connection: 2021-03-25 05:54:03.804--ServerSession(953082513)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
+    <system-out>[EL Info]: 2021-04-08 13:37:01.186--ServerSession(512456259)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
+[EL Info]: connection: 2021-04-08 13:37:01.189--ServerSession(512456259)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
+[EL Warning]: 2021-04-08 13:37:01.196--UnitOfWork(2119992687)--java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH30, cantidad=34.0].
+[EL Info]: connection: 2021-04-08 13:37:01.196--ServerSession(512456259)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
 </system-out>
   </testcase>
-  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testEliminarProductoSinLotes" time="0.065">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testEliminarProductoSinLotes(TrazabilidadTest.java:108)
+  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testEliminarProductoSinLotes" time="0.016">
+    <error message="An exception occurred while creating a query in EntityManager: 
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression.
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1751)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1772)
+	at es.uma.informatica.sii.jpa.trazabilidad.AccesoDatos.getListaProductos(AccesoDatos.java:53)
+	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testEliminarProductoSinLotes(TrazabilidadTest.java:107)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -254,15 +326,32 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression.
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:157)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:336)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:280)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:165)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:118)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.&lt;init&gt;(EJBQueryImpl.java:104)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.&lt;init&gt;(EJBQueryImpl.java:88)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1749)
+	... 34 more
 </error>
-    <system-out>[EL Info]: 2021-03-25 05:54:03.828--ServerSession(517254671)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
-[EL Info]: connection: 2021-03-25 05:54:03.831--ServerSession(517254671)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
-[EL Info]: connection: 2021-03-25 05:54:03.854--ServerSession(517254671)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
+    <system-out>[EL Info]: 2021-04-08 13:37:01.202--ServerSession(951221468)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
+[EL Info]: connection: 2021-04-08 13:37:01.204--ServerSession(951221468)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
+[EL Info]: connection: 2021-04-08 13:37:01.212--ServerSession(951221468)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
 </system-out>
   </testcase>
-  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testAniadirLoteAProducto" time="0.079">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testAniadirLoteAProducto(TrazabilidadTest.java:130)
+  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testAniadirLoteAProducto" time="0.016">
+    <error message="java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH3, cantidad=34.0]." type="javax.persistence.RollbackException">javax.persistence.RollbackException: java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH3, cantidad=34.0].
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:161)
+	at es.uma.informatica.sii.jpa.trazabilidad.AccesoDatos.aniadirLoteAProducto(AccesoDatos.java:111)
+	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testAniadirLoteAProducto(TrazabilidadTest.java:128)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -294,15 +383,35 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH3, cantidad=34.0].
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.discoverUnregisteredNewObjects(RepeatableWriteUnitOfWork.java:315)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.calculateChanges(UnitOfWorkImpl.java:774)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithChangeSet(UnitOfWorkImpl.java:1570)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.commitRootUnitOfWork(RepeatableWriteUnitOfWork.java:280)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitAndResume(UnitOfWorkImpl.java:1222)
+	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:136)
+	... 33 more
 </error>
-    <system-out>[EL Info]: 2021-03-25 05:54:03.897--ServerSession(593415583)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
-[EL Info]: connection: 2021-03-25 05:54:03.907--ServerSession(593415583)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
-[EL Info]: connection: 2021-03-25 05:54:03.944--ServerSession(593415583)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
+    <system-out>[EL Info]: 2021-04-08 13:37:01.219--ServerSession(1227264471)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
+[EL Info]: connection: 2021-04-08 13:37:01.221--ServerSession(1227264471)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
+[EL Warning]: 2021-04-08 13:37:01.228--UnitOfWork(1361817590)--java.lang.IllegalStateException: During synchronization a new object was found through a relationship that was not marked cascade PERSIST: Lote [id=null, fechaFabricacion=Sun Mar 21 00:00:00 CET 2021, fechaConsumoPreferente=Wed Apr 21 00:00:00 CEST 2021, codigoLote=LT345GH3, cantidad=34.0].
+[EL Info]: connection: 2021-04-08 13:37:01.228--ServerSession(1227264471)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
 </system-out>
   </testcase>
-  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testCrearProducto" time="0.04">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testCrearProducto(TrazabilidadTest.java:66)
+  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testCrearProducto" time="0.021">
+    <error message="An exception occurred while creating a query in EntityManager: 
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression.
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1751)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1772)
+	at es.uma.informatica.sii.jpa.trazabilidad.AccesoDatos.getListaProductos(AccesoDatos.java:53)
+	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testCrearProducto(TrazabilidadTest.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -334,15 +443,41 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression.
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:157)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:336)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:280)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:165)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:118)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.&lt;init&gt;(EJBQueryImpl.java:104)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.&lt;init&gt;(EJBQueryImpl.java:88)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1749)
+	... 34 more
 </error>
-    <system-out>[EL Info]: 2021-03-25 05:54:03.967--ServerSession(1000966072)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
-[EL Info]: connection: 2021-03-25 05:54:03.977--ServerSession(1000966072)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
-[EL Info]: connection: 2021-03-25 05:54:03.989--ServerSession(1000966072)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
+    <system-out>[EL Info]: 2021-04-08 13:37:01.233--ServerSession(6422064)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
+[EL Info]: connection: 2021-04-08 13:37:01.242--ServerSession(6422064)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
+[EL Info]: connection: 2021-04-08 13:37:01.249--ServerSession(6422064)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
 </system-out>
   </testcase>
-  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testCrearProductoConMasExistentes" time="0.089">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testCrearProductoConMasExistentes(TrazabilidadTest.java:81)
+  <testcase classname="es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest" name="testCrearProductoConMasExistentes" time="0.02">
+    <error message="An exception occurred while creating a query in EntityManager: 
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: An exception occurred while creating a query in EntityManager: 
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression.
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1751)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1772)
+	at es.uma.informatica.sii.jpa.trazabilidad.AccesoDatos.getListaProductos(AccesoDatos.java:53)
+	at es.uma.informatica.sii.jpa.trazabilidad.TrazabilidadTest.testCrearProductoConMasExistentes(TrazabilidadTest.java:80)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -374,10 +509,25 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: Exception [EclipseLink-0] (Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f): org.eclipse.persistence.exceptions.JPQLException
+Exception Description: Syntax error parsing [SELECT * FROM PRODUCTO]. 
+[22, 22] A select statement must have a FROM clause.
+[7, 7] The left expression is missing from the arithmetic expression.
+[9, 22] The right expression is not an arithmetic expression.
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildException(HermesParser.java:157)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.validate(HermesParser.java:336)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.populateQueryImp(HermesParser.java:280)
+	at org.eclipse.persistence.internal.jpa.jpql.HermesParser.buildQuery(HermesParser.java:165)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:142)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.buildEJBQLDatabaseQuery(EJBQueryImpl.java:118)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.&lt;init&gt;(EJBQueryImpl.java:104)
+	at org.eclipse.persistence.internal.jpa.EJBQueryImpl.&lt;init&gt;(EJBQueryImpl.java:88)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.createQuery(EntityManagerImpl.java:1749)
+	... 34 more
 </error>
-    <system-out>[EL Info]: 2021-03-25 05:54:04.018--ServerSession(646910062)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
-[EL Info]: connection: 2021-03-25 05:54:04.046--ServerSession(646910062)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
-[EL Info]: connection: 2021-03-25 05:54:04.061--ServerSession(646910062)--/file:/home/alumno/Escritorio/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
+    <system-out>[EL Info]: 2021-04-08 13:37:01.259--ServerSession(1212191909)--EclipseLink, version: Eclipse Persistence Services - 2.7.6.v20200131-b7c997804f
+[EL Info]: connection: 2021-04-08 13:37:01.262--ServerSession(1212191909)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad login successful
+[EL Info]: connection: 2021-04-08 13:37:01.269--ServerSession(1212191909)--/file:/home/alumno/Escritorio/Asignatura-306/Practica 2/trazabilidad/target/classes/_jpa-trazabilidad logout successful
 </system-out>
   </testcase>
 </testsuite>
