@@ -1,0 +1,5 @@
+Para ejecutar la práctica y comprobar si pasa las pruebas de junit hacer los siguientes pasos:
+
+Abrir la terminal en el siguiente directorio -> Asignatura-306/Practica-3/trazabilidad-ejb_1
+
+Ejecutar el siguiente comando en la terminal -> mvn test
