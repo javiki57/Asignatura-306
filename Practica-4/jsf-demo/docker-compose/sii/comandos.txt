@@ -1,0 +1,24 @@
+Primer comando dentro de la carpeta donde esta el fichero docker-compose
+> sudo docker-compose up
+
+Si ya hay un contenedor mysql corriendo, hay que pararlo antes de empezar.
+
+Para iniciar:
+> sudo docker-compose start
+
+Para parar:
+
+>sudo docker-compose stop
+
+con esto tenemos corriendo 2 contenedores en la maquina, uno con mysql y otro con wildfly
+
+
+Usuario y contraseña de wildfly:
+
+user:admin
+psswd:Admin#70365
+
+
+-----------
+Siguiente comando en el proyecto maven:
+>mvn package

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      >
+<h:head>
+  <title>Agenda</title>
+  <meta charset="UTF-8"/>
+</h:head>
+
+<h:body>
+
+<h:form id="entradaContactos">
+
+<table>
+<thead>
+	<tr><th>Nombre</th>
+	<th>Apellido</th>
+	<th>Teléfono</th>
+	<th/>
+	</tr>
+</thead>
+<tr>
+	<td><h:inputText id="nombre" value="#{agenda.contacto.nombre}" required="true"/></td>
+	<td><h:inputText id="Apellido" value="#{agenda.contacto.apellido}" /></td>
+	<td><h:inputText id="telefono" value="#{agenda.contacto.telefono}"/></td>
+	<td><h:commandButton id="botonAniadir" action="#{agenda.aniadirContacto}" value="Añadir"/></td>
+</tr>
+</table>
+
+</h:form>
+
+<h:messages id="mensajes"/>
+
+<h:form id="accionesContactos">
+
+<h:dataTable id="tabla" value="#{agenda.todosContactos}" var="c">
+	<h:column>
+		<f:facet name="header">
+			Nombre
+		</f:facet>
+		<h:outputText id="nombre" value="#{c.nombre}"/>
+	</h:column>
+	
+	<h:column>
+		<f:facet name="header">
+			Apellido
+		</f:facet>
+		<h:outputText id="apellido" value="#{c.apellido}"/>
+	</h:column>
+	
+	<h:column>
+		<f:facet name="header">
+			Teléfono
+		</f:facet>
+		<h:outputText id="telefono" value="#{c.telefono}"/>
+	</h:column>
+	
+	<h:column>
+		<h:commandButton id="eliminar" action="#{agenda.eliminar(c)}" value="Eliminar"/>
+	</h:column>
+	
+</h:dataTable>
+
+</h:form>
+
+<h:form id="selector">
+	<h:selectOneMenu id="menuSeleccion" value="#{agenda.contactoElegido}">
+		<f:selectItems id="elemento" value="#{agenda.todosContactos}" 
+		var="c" itemLabel="#{c.nombre} #{c.apellido}" itemValue="#{c.apellido}"/>
+	</h:selectOneMenu>
+	<h:outputText id="textoContactoElegido" value="#{agenda.contactoElegido}"/>
+	<h:commandButton id="botonContactoElegido" value="Enviar"/>
+</h:form>
+
+</h:body>
+
+</html>

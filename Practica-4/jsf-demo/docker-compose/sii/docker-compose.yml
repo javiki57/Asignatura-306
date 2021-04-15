@@ -1,0 +1,13 @@
+version: '3'
+services:
+  contwildfly:
+    build: ./wildfly
+    ports:
+    - "8080:8080"
+    - "9990:9990"
+    - "8787:8787"
+  contmysql:
+    build: ./mysql
+    ports:
+    - "3306:3306"
+    
