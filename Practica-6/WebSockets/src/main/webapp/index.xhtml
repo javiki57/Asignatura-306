@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      >
+<h:head>
+  <title>Sala de chat</title>
+</h:head>
+
+<h:body>
+
+<h:panelGroup id="inicio" rendered="#{empty salaChat.nombre}">
+<h:form id="ingreso">
+	<h:panelGrid columns="2">
+		<f:facet name="header">
+			<h:outputText value="Ingreso en la sala de chat"/>
+		</f:facet>
+		<h:outputLabel value ="Nombre:"/>
+		<h:inputText value="#{salaChat.nombre}"/>
+		<f:facet name="footer">
+			<h:commandButton value="Entrar"/>
+		</f:facet>
+	</h:panelGrid>
+	
+</h:form>
+</h:panelGroup>
+
+<h:panelGroup id="sala" rendered="#{not empty salaChat.nombre}">
+
+<h:outputScript>var nombre="#{salaChat.nombre}";</h:outputScript>
+<h:outputScript>var wsurl="#{salaChat.webSocketUrl}";</h:outputScript>
+<h:outputScript library="js" name="chat.js"/>
+
+<h1>Sala de chat</h1>
+<form action="">
+<table>
+<tr><td><textarea readonly="readonly" rows="20" cols="80" id="areaChat"/></td></tr>
+<tr>
+<td><h:outputText value="#{salaChat.nombre}:"/>
+<input type="text" maxlength="200" size="30" id="entradaTexto" onkeypress="teclaEnEntrada(event)"/>
+<input type="button" value="Enviar" onclick="mandaMensaje()"/></td></tr>
+</table>
+</form>
+
+<h:form id="salida">
+	<h:commandButton value="Salir" action="#{salaChat.salirChat}"/>
+</h:form>
+
+</h:panelGroup>
+
+
+</h:body>
+
+</html>

@@ -57,7 +57,27 @@ public class ServicioREST {
 	@Consumes ({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public Response aniadirContacto(Contacto contacto) {
 		// TODO
-		return null;
+		Usuario usuario = getUsuario();
+		if (usuario == null) {
+			return Response.status(Status.BAD_REQUEST).build();
+		}
+		
+		if (contacto == null) {
+			return Response.status(Status.BAD_REQUEST).build();
+		}
+		
+		contacto.setUsuario(usuario);
+		
+		try {
+			negocio.insentar(contacto);
+			URI uri = uriInfo.getAbsolutePathBuilder().path(contacto.getId().toString()).build();
+			return Response.created(uri).build(); 
+			
+		}catch(AgendaException e) {
+			return Response.status(Status.UNAUTHORIZED).build();
+
+		}
+		
 	}
 	
 	private Usuario getUsuario() {
@@ -75,6 +95,24 @@ public class ServicioREST {
 		usuario.setContrasenia(partesAutorizacion[1]);
 		
 		return usuario;
+	}
+	
+	@Path("/contacto/{id}")
+	@GET
+	@Produces ({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+	public Response getContacto(@PathParam("id") Long id) {
+		
+		Usuario usuario = getUsuario();
+		if (usuario == null) {
+			return Response.status(Status.BAD_REQUEST).build();
+		}
+	    try {
+	    	Contacto contacto = negocio.obtenerContacto(usuario, id);
+	    	return Response.ok(contacto).build();
+	    }catch(AgendaException e){
+	    	return Response.status(Status.UNAUTHORIZED).build();
+	    }
+		
 	}
 
 }
